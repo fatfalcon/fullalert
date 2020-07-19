@@ -9,6 +9,7 @@
     "test": "echo \"Very simple utils, so no tests\" && exit 0",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
+    "test-send-message": "ts-node ./scripts/send_message_test.ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
